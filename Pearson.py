@@ -103,6 +103,7 @@ def calc_p_iuf(avg_rating,avg_trainrating,weightlist,train,target_movie):
     p = avg_rating if deno == 0.0 else avg_rating + (numer/deno)
     p = 5 if p > 5 else p = 1
     return p
+
 if __name__ == '__main__':
     #get input file and set up the matrix
     file = open("C:\\Users\\songjie\\Desktop\\train.txt","r")
